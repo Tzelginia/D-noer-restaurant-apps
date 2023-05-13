@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>D'Noer Resto</title>
   <link rel="shortcut icon" href="./images/heros/logo.png" type="image/x-icon">
+  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="description" content="Temukan berbagai cita rasa makanan restoran Indonesia, yang tersedia dalam Restaurant List web D'Noer Resto">
 </head>
 <body>
    <a href="#content" class="skip_content">Skip to content ?</a>
     <nav class="navbar">
         <a class="logo" >D'Noer Resto</a>
         <ul class="navbar_list">
-            <li class="item_navbar"><a href="/">Home</a></li>
-            <li class="item_navbar"><a href="#">Favorite</a></li>
+            <li class="item_navbar" id="home"><a href="#">Home</a></li>
+            <li class="item_navbar" id="favoriteResto"><a href="#">Favorite</a></li>
             <li class="item_navbar"><a href="https://www.linkedin.com/in/tzelginia-nc-23a6001a7/">About Us</a></li>
         </ul>
     </nav>
@@ -24,8 +27,8 @@
     </div>
     <nav class="navbar_hp" id="navbar_menu">
       <ul class="list_nav_hp">
-        <li class="item_navbar_hp"><a href="/">Home</a></li>
-        <li class="item_navbar_hp"><a href="#">Favorite</a></li>
+        <li class="item_navbar_hp" id="home"><a href="#">Home</a></li>
+        <li class="item_navbar_hp" id="favoriteResto"><a href="#">Favorite</a></li>
         <li class="item_navbar_hp"><a href="https://www.linkedin.com/in/tzelginia-nc-23a6001a7/">About Us</a></li>
        </ul>
     </nav>
@@ -42,8 +45,9 @@
     <main id="content">
         <section class="content">
             <div class="teks_content">
-                <h1>Restaurant List</h1>
+                <h1 id="judul">Restaurant List</h1>
                 <div class="list" id="resto_list"></div>
+                <div class="show" id="show_resto"></div>
             </div>
         </section>
     </main>
